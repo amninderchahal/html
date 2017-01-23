@@ -176,42 +176,30 @@
 		function resize(){	
 	        if ($(window).width() <= 767){
 	            //--------Swipe left--------//	
-                $(".element-1").on("swipeleft",function(){
-			     	$(this).fadeOut(200);
-					$(".search-text").fadeOut(200);
-					$(".p2").delay(201).fadeIn(300);
-				    $(".element-2").delay(201).fadeIn(300);
+                            $(".element-1").on("swipeleft",function(){
+			     	    $(".element").fadeOut(200).delay(200);
+				    $(".element-2").fadeIn(300);
 			    });
 			    $(".element-2").on("swipeleft",function(){
-				    $(this).fadeOut(200);
-					$(".search-text").fadeOut(200);
-					$(".p3").delay(201).fadeIn(300);
-				    $(".element-3").delay(201).fadeIn(300);
+				    $(".element").fadeOut(200).delay(200);
+				    $(".element-3").fadeIn(300);
 			    });
 			    $(".element-3").on("swipeleft",function(){
-				    $(this).fadeOut(200);
-					$(".search-text").fadeOut(200);
-					$(".p4").delay(201).fadeIn(300);
-				    $(".element-4").delay(201).fadeIn(300);
+				    $(".element").fadeOut(200).delay(200);
+				    $(".element-4").fadeIn(300);
 			    });
 			    //--------Swipe right--------//	
 			    $(".element-2").swiperight(function(){
-				    $(this).fadeOut(200);
-					$(".search-text").fadeOut(200);
-					$(".p1").delay(201).fadeIn(300);
-				    $(".element-1").delay(201).fadeIn(300);
+				    $(".element").fadeOut(200).delay(200);
+				    $(".element-1").fadeIn(300);
 			    });
 			    $(".element-3").swiperight(function(){
-				    $(this).fadeOut(200);
-					$(".search-text").fadeOut(200);
-					$(".p2").delay(201).fadeIn(300);
-				    $(".element-2").delay(201).fadeIn(300);
+				    $(".element").fadeOut(200).delay(200);
+				    $(".element-2").fadeIn(300);
 			    });
 			    $(".element-4").swiperight(function(){
-				    $(this).fadeOut(200);
-					$(".search-text").fadeOut(200);
-					$(".p3").delay(201).fadeIn(300);
-				    $(".element-3").delay(201).fadeIn(300);
+				    $(".element").fadeOut(200).delay(200);
+				    $(".element-3").fadeIn(300);
 			    });
 		    }
 		}

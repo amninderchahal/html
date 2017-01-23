@@ -107,7 +107,9 @@ h1{
 	    margin:auto;
 	    margin-top:70px;
 	}
-	
+	.element-1{
+	    display:block;
+	}
        .element-2,.element-3,.element-4{
             display:none;
         }

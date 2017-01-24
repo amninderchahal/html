@@ -40,13 +40,13 @@
 
 <div class="main-content">
     <div class="search-btn-div">
-        <p class="sort-search-text">Sort search results by:<p> 
+        <p class="sort-search-text">Search files by:<p> 
 	    <div class="btn-container">
 	        <div class="btn-group btn-group-lg" id="btn-group">
-                 <button type="button" class="btn btn-default" id="btn-1">File Size</button>
-                 <button type="button" class="btn btn-default" id="btn-2">File Type</button>
-			     <button type="button" class="btn btn-default" id="btn-3">Year Created</button>
-                 <button type="button" class="btn btn-default" id="btn-4">Content</button>
+                 <button type="button" class="btn btn-default btn-search" id="btn-1">File Size</button>
+                 <button type="button" class="btn btn-default btn-search" id="btn-2">File Type</button>
+			     <button type="button" class="btn btn-default btn-search" id="btn-3">Year Created</button>
+                 <button type="button" class="btn btn-default btn-search" id="btn-4">Content</button>
             </div>
 		</div>
 	 </div>
@@ -205,18 +205,26 @@
 		}
 		//-------------Button Clicks--------------------//
 		    $("#btn-1").click(function(){
+                $(".btn-search").removeClass("btn-active");
+                $(this).addClass("btn-active");
 				$(".element").fadeOut(200);
 				$(".element-1").delay(210).fadeIn(400);
 			});
 			$("#btn-2").click(function(){
+                $(".btn-search").removeClass("btn-active");
+                $(this).addClass("btn-active");
 				$(".element").fadeOut(200);
 				$(".element-2").delay(210).fadeIn(400);
 			});
 			$("#btn-3").click(function(){
+                $(".btn-search").removeClass("btn-active");
+                $(this).addClass("btn-active");
 				$(".element").fadeOut(200);
 				$(".element-3").delay(210).fadeIn(400);
 			});
 			$("#btn-4").click(function(){
+                $(".btn-search").removeClass("btn-active");
+                $(this).addClass("btn-active");
 				$(".element").fadeOut(200);
 				$(".element-4").delay(210).fadeIn(400);
 			});

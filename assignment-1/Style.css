@@ -47,6 +47,10 @@ body{
 	background-color:#404040;
 	border:1px solid #262626;
 }
+.btn-active{
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
 .row{
 	display:flex;
 }
